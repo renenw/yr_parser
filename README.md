@@ -3,7 +3,7 @@
 ## TL;DR
 yr.no forecasts include point-in-time forecasts (for, for example, temperature), and forecasts that relate to a time range (for, for example, precipitation).
 
-This script turns yr.no forecasts into hourly forecasts, and summaries, that are simpler to understand, and easy to script into databases and other systems.
+This script turns yr.no forecasts into hourly forecasts, and summaries that are simpler to understand, and easy to script into databases and systems.
 
 ## Usage
 ```
@@ -17,7 +17,7 @@ Node|Description|Type
 `today`|Value only nodes: `precipitation`, `min_temperature`, `max_temperature`, `max_wind_speed`|Object
 `three_days`|Value only nodes: `precipitation`, `min_temperature`, `max_temperature`, `max_wind_speed`|Object
 `week`|Value only nodes: `precipitation`, `min_temperature`, `max_temperature`, `max_wind_speed`|Object
-hourly|Object with five nodes: `from_time`, `temperatures`, `wind_speed`, `wind_direction`, `precipitation`. These nodes contain equally sized arrays which list times, temperatures etc that match the hour starting at the corresponding `from_time` entry.|Object
+`hourly`|Object with five nodes: `from_time`, `temperatures`, `wind_speed`, `wind_direction`, `precipitation`. These nodes contain equally sized arrays which list times, temperatures etc that match the hour starting at the corresponding `from_time` entry.|Object
 
 A detailed exploration and unit definitions can be found in "Detailed Outputs" below. Or run the script - its probably more intuitive than wading through this document!
 
